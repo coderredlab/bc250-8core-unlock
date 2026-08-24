@@ -1,0 +1,24 @@
+[Defines]
+  INF_VERSION                    = 0x0001001B
+  BASE_NAME                      = Bc250CoreUnlockPei
+  FILE_GUID                      = 45EC1B8A-957A-44E8-88BD-7FF8ABAE06BB
+  MODULE_TYPE                    = PEIM
+  VERSION_STRING                 = 0.1
+  ENTRY_POINT                    = Bc250CoreUnlockPeiEntryPoint
+
+[Sources]
+  Bc250CoreUnlockPei.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  Bc250CoreUnlockPkg.dec
+
+[LibraryClasses]
+  PeimEntryPoint
+  PeiServicesLib
+
+[Ppis]
+  gEfiPciCfg2PpiGuid
+  gEfiPeiResetPpiGuid
+[Depex]
+  TRUE

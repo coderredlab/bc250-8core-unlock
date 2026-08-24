@@ -1,0 +1,7 @@
+.cache/
+build-output/
+Build/
+__pycache__/
+*.pyc
+BC250-P3.00-Base.rom
+BC250-P3.00-8Core.rebuilt.rom
